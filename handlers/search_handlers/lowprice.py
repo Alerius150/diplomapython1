@@ -50,7 +50,7 @@ def get_cities_request(message: Message) -> None:
         data['city'] = message.text
         logger.info(f'user_id {message.from_user.id}')
         keyboard = get_dest_id(message.text, data['locale'], data['currency'], state='low_city')
-        if keyboard.keyboard:
+        isinstance(keyboard, message.text)
             logger.info(f'user_id {message.from_user.id} {message.text}')
             bot.send_message(message.chat.id, 'Выберите подходящий город:', reply_markup=keyboard)
         else:
