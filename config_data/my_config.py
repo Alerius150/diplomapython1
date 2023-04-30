@@ -20,8 +20,8 @@ DEFAULT_COMMANDS = (
     ('bestdeal', 'Настройка поиска'),
     ('history', 'История поиска')
 )
-url_from_cities = "https://hotels4.p.rapidapi.com/locations/v2/search"
-url_from_properties = "https://hotels4.p.rapidapi.com/properties/list"
+url_from_cities = "https://hotels4.p.rapidapi.com/locations/v3/search"
+url_from_properties = "https://hotels4.p.rapidapi.com/properties/v3/list"
 url_from_photo = "https://hotels4.p.rapidapi.com/properties/get-hotel-photos"
 
 headers = {
