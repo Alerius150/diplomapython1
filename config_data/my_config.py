@@ -10,8 +10,8 @@ else:
     logger.info(f'{logger.name}')
     load_dotenv()
 
-BOT_TOKEN = os.getenv('5852786867')
-RAPID_API_KEY = os.getenv("4039428")
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+RAPID_API_KEY = os.getenv('RAPID_API_KEY')
 DEFAULT_COMMANDS = (
     ('start', "Запустить бота"),
     ('help', "Вывести справку"),
@@ -20,8 +20,8 @@ DEFAULT_COMMANDS = (
     ('bestdeal', 'Настройка поиска'),
     ('history', 'История поиска')
 )
-url_from_cities = "https://hotels4.p.rapidapi.com/locations/v2/search"
-url_from_properties = "https://hotels4.p.rapidapi.com/properties/list"
+url_from_cities = "https://hotels4.p.rapidapi.com/locations/v3/search"
+url_from_properties = "https://hotels4.p.rapidapi.com/properties/v3/list"
 url_from_photo = "https://hotels4.p.rapidapi.com/properties/get-hotel-photos"
 
 headers = {
